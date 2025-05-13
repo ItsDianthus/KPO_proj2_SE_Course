@@ -1,10 +1,4 @@
-FROM ubuntu:latest
-LABEL authors="Dianazavr"
-
+FROM openjdk:17-jdk-slim
 WORKDIR /app
-
-COPY target/file-storing-service-*.jar app.jar
-
-EXPOSE 8081
-
-ENTRYPOINT ["java", "-jar", "app.jar"]
+COPY target/file-storing.jar app.jar
+ENTRYPOINT ["java", "-jar", "2app.jar"]

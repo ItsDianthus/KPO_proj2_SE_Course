@@ -24,6 +24,7 @@
     <modules>
         <module>file-storing-service</module>
         <module>file-analysis-service</module>
+        <module>api-gateway</module>
     </modules>
     <scm>
         <connection/>

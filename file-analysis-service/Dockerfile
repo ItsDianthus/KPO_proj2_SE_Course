@@ -1,10 +1,4 @@
-FROM ubuntu:latest
-LABEL authors="Dianazavr"
-
+FROM openjdk:17-jdk-slim
 WORKDIR /app
-
-COPY target/file-analysis-service-*.jar app.jar
-
-EXPOSE 8082
-
+COPY target/file-analysis.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
